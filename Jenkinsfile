@@ -4,7 +4,7 @@ pipeline {
 			stage('First') {
 				steps {
 					sh '''
-						echo "Paso 1"
+						echo "Paso 2"
 					'''
 				}
 			}
