@@ -4,7 +4,7 @@ pipeline {
 			stage('First') {
 				steps {
 					sh '''
-						echo "Paso prueba de commit"
+						echo "Paso prueba de commit 2"
 					'''
 				}
 			}
