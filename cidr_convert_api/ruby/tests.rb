@@ -32,13 +32,13 @@ class TestConvert < Minitest::Test
     assert_equal 'Invalid', @convert.mask_to_cidr('0.0.0.0')
     assert_equal 'Invalid', @convert.mask_to_cidr('0.0.0.0.0')
     assert_equal 'Invalid', @convert.mask_to_cidr('255.255.255')
-    assert_equal 'Invalid', @convert.mask_to_cidr('11.0.0.0')
+    assert_equal 'Invalid', @convert.mask_to_cidr('IP_ADDRESS')
   end
 
   def test_valid_ipv4
     assert  @validate.ipv4_validation('127.0.0.1')
     assert  @validate.ipv4_validation('0.0.0.0.0')
-    assert  @validate.ipv4_validation('192.168.0.1')
+    assert  @validate.ipv4_validation('IP_ADDRESS')
     assert  @validate.ipv4_validation('255.255.255')
   end
 
