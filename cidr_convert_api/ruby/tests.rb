@@ -9,8 +9,8 @@ class TestConvert < Minitest::Test
   end
 
   def test_valid_cidr_to_mask
-    assert_equal '128.0.0.0', @convert.cidr_to_mask('1')
-    assert_equal '255.255.0.0', @convert.cidr_to_mask('16')
+    assert_equal 'IP_ADDRESS', @convert.cidr_to_mask('1')
+    assert_equal 'IP_ADDRESS', @convert.cidr_to_mask('16')
     assert_equal '255.255.248.0', @convert.cidr_to_mask('21')
     assert_equal '255.255.255.255', @convert.cidr_to_mask('32')
   end
